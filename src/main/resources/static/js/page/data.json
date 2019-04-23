@@ -1,0 +1,63 @@
+{
+    "code": 0,
+    "root":"http://127.0.0.1:8080/api",
+    "manager":{
+        "school_year":{
+            "add": "/mng/schyer/add",
+            "del": "/mng/schyer/del",
+            "modify": "/mng/schyer/modify",
+            "list": "/mng/schyer/list"
+        },
+        "department":{
+            "add": "/mng/dpt/add",
+            "del": "/mng/dpt/del",
+            "modify": "/mng/dpt/modify",
+            "list": "/mng/dpt/list"
+        },
+        "course":{
+            "add": "/mng/cou/add",
+            "del": "/mng/cou/del",
+            "modify": "/mng/cou/modify",
+            "list": "/mng/cou/list"
+        },
+        "secction":{
+            "add": "/mng/sec/add",
+            "del": "/mng/sec/del",
+            "modify": "/mng/sec/modify",
+            "list": "/mng/sec/list"
+        },
+        "user":{
+            "add": "/mng/user/add",
+            "del": "/mng/user/del",
+            "modify": "/mng/user/modify",
+            "list": "/mng/user/list",
+            "list_teacher": "/mng/user/teacher/list"
+        }
+      
+    },
+    "select":{
+        "list": "/slc/sec/list",
+        "select": "/slc/select"
+    },
+    "user":{
+        "info": "/user/info",
+        "details": "/user/details",
+        "modify": "/user/modify"
+    },
+    "student":{
+        "list": "/mcou/list",
+        "project": "/mcou/project/list",
+        "teacher": "/mcou/teacher/info"
+    },
+    "teacher":{
+        "list": "/mcou/teacher/list",
+        "project": "/mcou/teacher/project/list",
+        "student": "/mcou/student/list",
+        "addPro": "/entry/add",
+        "delPro": "/entry/del",
+        "teamList": "/entry/team/list",
+        "addTeam": "/entry/team/add",
+        "delTeam": "/entry/team/del",
+        "modTeam": "/entry/team/mod"
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <meta http-equiv="refresh" content="0;ie.html" />
+    <![endif]-->
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title" style="border-top:1px solid #E7EAEC;">
+                        <form role="form" class="form-inline">
+                            <div class="form-group">
+                                <input type="text" placeholder="class name" id="user_sch_str" class="form-control">
+                            </div>
+                            <button class="btn btn-white" type="button" style="margin:0px" id="user_sch">Search</button>
+                        </form>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Section</th>
+                                            <th>Days&Times</th>
+                                            <th>Room</th>
+                                            <th>Instructors</th>
+                                            <th>Meeting Dates</th>
+                                            <th>Credit</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="section_list">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">Project</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">Instructors</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Title</th>
+                                            <th>Tutor</th>
+                                            <th>Score</th>
+                                            <th>Avg</th>
+                                            <th>High</th>
+                                            <th>Low</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="project_list">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                    <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Gender</th>
+                                                    <th>Job Title</th>
+                                                    <th>Email</th>
+                                                    <th>Office Location</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="teacher_list">
+                                            </tbody>
+                                        </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/page/student.js"></script>
+</body>
+
+</html>

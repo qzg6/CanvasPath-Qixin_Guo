@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+                <div class="col-sm-12">
+                        <div class="ibox">
+                            <div class="ibox-title" style="border-top:1px solid #E7EAEC;">
+                                <h5>User information</h5>
+                            </div>
+                            <div class="ibox-content">
+                                    <div class="row" id="user">
+                                            <div class="col-sm-6">
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Name:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="name" class="form-control" id="user_name" data-id="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Password:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="password" class="form-control" id="user_pwd">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Phone:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="personal id" class="form-control" id="user_persid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Age:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="number" placeholder="age" class="form-control" id="user_age">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Gender:</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="form-control">
+                                                                <label>
+                                                                    <input type="radio" name="userGender" checked="" id="user_male" value="male">Male 
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="userGender" id="user_female" value="female">Female 
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                            <label class="col-sm-3 control-label">Email</label>
+                                                            <div class="col-sm-8">
+                                                                <input type="email" placeholder="email" class="form-control" id="user_email">
+                                                            </div>
+                                                        </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <form class="form-horizontal">
+                                                   
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Home Address：</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="home Address" class="form-control" id="user_home">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Job Title:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="job title" class="form-control" id="user_job">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Office address:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="office address" class="form-control" id="user_office" >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Department:</label>
+                                                        <div class="col-sm-8">
+                                                                <select data-placeholder="" class="chosen-select" multiple id="user_dpt">
+                                                                </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="col-sm-3 control-label">Zip Code:</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" placeholder="Zip code" class="form-control" id="user_code">
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="ibox-content">
+                                                    <div class="form-group">
+                                                        <div class="col-sm-offset-3 col-sm-8 text-right">
+                                                            <button class="btn btn-sm btn-white" type="button" id="user_save">UPDATE</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                     </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
+        <!-- 全局js -->
+        <script src="js/jquery.min.js?v=2.1.4"></script>
+        <script src="js/bootstrap.min.js?v=3.3.6"></script>
+        <script src="js/plugins/chosen/chosen.jquery.js"></script>
+        <script src="js/page/user.js"></script>
+</body>
+
+</html>

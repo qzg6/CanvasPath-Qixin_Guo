@@ -1,0 +1,19 @@
+.primary{
+    color: #27B394;
+}
+.chosen-container-multi .chosen-choices{
+    border: 1px solid #e5e6e7;
+}
+.chosen-container-active .chosen-choices {
+    border: 1px solid #27B394;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0);
+}
+.chosen-container .chosen-results li.highlighted {
+    background-color: #27B394;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #27B394), color-stop(90%, #27B394));
+    background-image: -webkit-linear-gradient(#27B394 20%, #27B394 90%);
+    background-image: -moz-linear-gradient(#27B394 20%, #27B394 90%);
+    background-image: -o-linear-gradient(#27B394 20%, #27B394 90%);
+    background-image: linear-gradient(#27B394 20%, #27B394 90%);
+    color: #fff;
+}

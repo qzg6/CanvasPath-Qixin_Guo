@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/chosen/chosen.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title" style="border-top:1px solid #E7EAEC;">
+                        <form role="form" class="form-inline">
+                            <div class="form-group">
+                                <input type="text" placeholder="section name" id="teacher_sch_str" class="form-control">
+                            </div>
+                            <button class="btn btn-white" type="button" style="margin:0px"
+                                id="teacher_sch">Search</button>
+                        </form>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Class</th>
+                                            <th>Section</th>
+                                            <th>Days&Times</th>
+                                            <th>Room</th>
+                                            <th>Meeting Dates</th>
+                                            <th>Class Capacity</th>
+                                            <th>Credits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="section_list">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class=""><a data-toggle="tab" href="#tab-1" aria-expanded="true">Student</a>
+                        </li>
+                        <li class="active"><a data-toggle="tab" href="#tab-2" aria-expanded="false">Project</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane ">
+                            <div class="panel-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Phone</th>
+                                            <th>Gender</th>
+                                            <th>Age</th>
+                                            <th>Email Address</th>
+                                            <th>Zip Code</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="student_list">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>Category</th>
+                                                    <th>Avg</th>
+                                                    <th>High</th>
+                                                    <th>Low</th>
+                                                    <th>Create Time</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="pro_list">
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="7"> <button class="btn btn-white pull-right" type="button" id="pro_add">add project</button></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Team</th>
+                                                    <th>Member</th>
+                                                    <th>Score</th>
+                                                    <th>Support</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="team_list">
+                                            </tbody>
+                                            <tfoot>
+                                                <tr>
+                                                    <td colspan="5"> <button class="btn btn-white pull-right"  type="button" id="team_add">add team</button></td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+    <script src="js/page/teacher.js"></script>
+</body>
+
+</html>
